@@ -4,55 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Roll Bakery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Our Gallery</h1>
-        <p>Take a glimpse at some of our favourite moments at Roll Bakery!</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Visit Us</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="Roll Coffee.png" alt="Roll Bakery Logo" style="height:40px; display:inline-block;"> Roll Bakery
+            </div>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="slideshow-container">
-        <div class="slide fade">
-            <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/2.png" alt="Pastries">
+    <!-- Header -->
+    <header class="header text-center">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Take a look at some of our favourite moments at Roll! From golden, flaky croissants fresh out of the oven to the perfect pour-over, our gallery showcases the passion and craftsmanship that go into everything we do.</p>
         </div>
-        <div class="slide fade">
-            <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/3.png" alt="Pastries">
-        </div>
-        <div class="slide fade">
-            <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/4.png" alt="Pastries">
-        </div>
-        <div class="slide fade">
-            <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/13.png" alt="pasteries">
-        </div>
-        <div class="slide fade">
-            <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/5.png" alt="Pastries">
-        </div>
-        <div class="slide fade">
-            <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/7.png" alt="Croissants">
-        </div>
+    </header>
 
-        <!-- Slideshow Controls -->
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <!-- Gallery Carousel -->
+    <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/7.png" class="img-responsive center-block" alt="Freshly baked croissants">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/9.png" class="img-responsive center-block" alt="Coffee">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/14.png" class="img-responsive center-block" alt="Handmade sourdough bread">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/10.png" class="img-responsive center-block" alt="pastry meal">
+                <div class="carousel-caption">
+                </div>
+        </div>
+        
+        <!-- Carousel Controls -->
+        <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Roll Bakery & Coffee Shop. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="container-fluid text-center" style="background-color: #f8f8f8; padding: 20px; margin-top: 20px; border-top: 1px solid #ddd;">
+        <div class="container">
+            <p>&copy; 2025 Roll Bakery & Coffee Shop. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>Follow us on: <a href="#"><img src="instagram-1581266_1280.jpg" alt="Instagram" style="height:20px; margin-left:5px;"></a>
+            </p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
 
