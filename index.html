@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll Bakery & Coffee Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Roll</h1>
-        <p>Where every bite tells a story.</p>
-    </header>
-
-    <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="menu.html">Menu</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Visit Us</a>
-        <a href="#" style="float:right"></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="Roll Coffee.png" alt="Roll Bakery Logo" style="height:40px; display:inline-block;"> Roll Bakery
+            </div>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="section">
-        <h2>Welcome to Roll</h2>
-        <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/outside_bakery.png" width="1100px" height="600px"
-             alt="Roll Bakery Exterior" 
-             class="bakery-image">
-             
-        <p>Welcome to <b>Roll</b>, a cozy artisan bakery and coffee shop where every bite tells a story. Nestled in the heart of the city, we take pride in crafting <b>fresh, handmade pastries</b>, <b>breads</b>, and <b>expertly brewed coffee</b>.</p>
+    <!-- Header -->
+    <header class="header text-center">
+        <div class="container">
+            <h1>Welcome to Roll</h1>
+            <p>Where every bite tells a story.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="container text-center">
+        <h2>Freshly Baked Goodness</h2>
+        <p>We craft fresh, handmade pastries, breads, and expertly brewed coffee every day.</p>
+        <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/outside_bakery.png" class="img-responsive center-block" alt="Bakery Exterior">
         
-        <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/1.png" 
-             alt="Warm Bakery Interior" 
-             class="bakery-image">
+        <h3>Experience the Warmth</h3>
+        <p>At Roll, we take pride in our time-honored baking techniques and commitment to quality. Every morning, the aroma of freshly baked bread and rich coffee fills our space, welcoming our customers to slow down and enjoy the moment.</p>
+        
+        <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/1.png" class="img-responsive center-block" alt="Bakery Interior">
+        
+        <p>Our selection of artisan treats changes daily, ensuring there’s always something new to discover. From buttery croissants to perfectly balanced espresso, we pay attention to every detail. We also support sustainability by sourcing locally and using eco-friendly packaging.</p>
+        
+        <p>Join us for a cup of coffee, a flaky pastry, or a conversation with friends. Whether you’re stopping by for a quick bite or settling in with a book, we want you to feel at home.</p>
 
-        <p>At Roll, we believe in simplicity, quality, and community. Every morning, the aroma of freshly baked bread and rich coffee fills our space, welcoming our customers to slow down and enjoy the moment.</p>
+        <p><b>Follow us on Instagram</b> to stay updated on our <b>daily menu</b> and <b>seasonal specials</b>.</p>
+    </section>
 
-        <p>Our bakers use <b>time-honoured techniques</b> and the finest ingredients to create a selection of artisan treats that change daily, ensuring there’s always something new to discover.</p>
+    <!-- Footer -->
+    <footer class="container-fluid text-center" style="background-color: #f8f8f8; padding: 20px; margin-top: 20px; border-top: 1px solid #ddd;">
+        <div class="container">
+            <p>&copy; 2025 Roll Bakery & Coffee Shop. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>Follow us on: <a href="#"><img src="instagram-1581266_1280.jpg" alt="Instagram" style="height:20px; margin-left:5px;"></a>
+            </p>
+        </div>
+    </footer>
 
-        <p>From <b>buttery croissants</b> to <b>perfectly balanced espresso</b>, we pay attention to every detail. Our commitment to quality extends beyond our products—we are passionate about sustainability, sourcing locally whenever possible and using eco-friendly packaging to minimize waste.</p>
-
-        <p>We invite you to join us for a cup of coffee, a flaky pastry, or a conversation with friends. Whether you’re stopping by for a quick bite or settling in with a book, we want you to feel at home.</p>
-
-        <p>🌿 <b>Follow us on Instagram</b> to stay updated on our <b>daily menu</b> and <b>seasonal specials</b>.</p>
-
-        <p>Come in, take a seat, and savour the simple joy of great food and coffee. We can’t wait to welcome you!</p>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Roll Bakery & Coffee Shop. All Rights Reserved.</p>
-      </div>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
 
