@@ -4,47 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Roll Bakery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="menu.html">Menu</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Visit Us</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="Roll Coffee.png" alt="Roll Bakery Logo" style="height:40px; display:inline-block;"> Roll Bakery
+            </div>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="active"><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="section">
-        <h2>Our Menu</h2>
+    <!-- Header -->
+    <header class="header text-center">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Freshly baked, daily crafted, and made with love.</p>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="container text-center">
+        <h2>Sample Daily Offerings</h2>
         <p>Our menu changes daily, featuring a rotating selection of freshly baked goods and specialty drinks. Come by and see what’s on offer today!</p>
 
-        <h3>Sample Daily Offerings</h3>
-        <ul>
-            <li>
-                <strong>Baked Goods:</strong> Croissants, sourdough loaves, Danish pastries, cinnamon rolls, seasonal tarts
-                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/6.png" alt="Freshly baked croissants and pastries">
-            </li>
-            <li>
-                <strong>Drinks:</strong> Espresso, cappuccino, pour-over coffee, herbal teas, hot chocolate
-                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/8.png" alt="Coffee cup with latte art">
-            </li>
-            <li>
-                <strong>Seasonal Specials:</strong> Pumpkin spice lattes in autumn, fruit tarts in summer, and festive treats during the holidays
-                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/10.png" alt="Pumpkin spice latte with cinnamon sticks">
-            </li>
-            <li>
-                <strong>Dietary Options:</strong> We offer a selection of vegan and gluten-free treats daily.
-                <img src="dietary_options.jpg" alt="Assorted gluten-free and vegan pastries">
-            </li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Baked Goods</h3>
+                <p>Croissants, sourdough loaves, Danish pastries, cinnamon rolls, seasonal tarts</p>
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/6.png" alt="Freshly baked croissants and pastries" class="img-responsive center-block">
+            </div>
+            <div class="col-md-6">
+                <h3>Drinks</h3>
+                <p>Espresso, cappuccino, pour-over coffee, herbal teas, hot chocolate</p>
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/8.png" alt="Coffee cup with latte art" class="img-responsive center-block">
+            </div>
+        </div>
 
-        <p>Check our chalkboard in-store or follow us on Instagram for today’s menu.</p>
-    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Seasonal Specials</h3>
+                <p>Pumpkin spice lattes in autumn, fruit tarts in summer, and festive treats during the holidays</p>
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/5.png" alt="Pumpkin spice latte with cinnamon sticks" class="img-responsive center-block">
+            </div>
+            <div class="col-md-6">
+                <h3>Dietary Options</h3>
+                <p>We offer a selection of vegan and gluten-free treats daily.</p>
+                <img src="Adtrak - Large Project 2 - Bakery_Coffee shop - Roll/3.png" alt="Assorted gluten-free and vegan pastries" class="img-responsive center-block">
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Roll Bakery & Coffee Shop. All Rights Reserved.</p>
+        <p>Check our chalkboard in-store or follow us on Instagram for today’s menu!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center" style="background-color: #f8f8f8; padding: 20px; margin-top: 20px; border-top: 1px solid #ddd;">
+        <div class="container">
+            <p>&copy; 2025 Roll Bakery & Coffee Shop. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>Follow us on: <a href="#"><img src="instagram-1581266_1280.jpg" alt="Instagram" style="height:20px; margin-left:5px;"></a>
+        </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
