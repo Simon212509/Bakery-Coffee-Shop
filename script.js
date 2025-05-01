@@ -1,41 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let slideIndex = 0;
-    const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
+jQuery("#content1-headline1").fitText(1.0);
+jQuery("#content1-headline2").fitText(1.0);
+jQuery("#content1-headline3").fitText(1.0);
+jQuery("#content2-1").fitText(2.0);
+jQuery("#content2-2").fitText(2.0);
+jQuery("#footer1").fitText(1.2);
+jQuery("#footer2").fitText(1.2);
+jQuery("#footer3").fitText(1.2);
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === index ? "block" : "none";
-        });
-
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
-    }
-
-    function nextSlide() {
-        slideIndex = (slideIndex + 1) % slides.length;
-        showSlide(slideIndex);
-    }
-
-    function prevSlide() {
-        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-        showSlide(slideIndex);
-    }
-
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            slideIndex = i;
-            showSlide(slideIndex);
-        });
-    });
-
-    document.querySelector(".prev").addEventListener("click", prevSlide);
-    document.querySelector(".next").addEventListener("click", nextSlide);
-
-    // Auto-play (change image every 3 seconds)
-    setInterval(nextSlide, 3000);
-
-    // Initial display
-    showSlide(slideIndex);
+window.addEventListener("resize", function(){
+     if (document.documentElement.clientWidth <= 430) {
+    $(".navbar-brand").html("<img src='https://res.cloudinary.com/dbqqjaqqa/image/upload/v1489761620/logo_mini_pou3vz.png'>");
+	} else {
+    $(".navbar-brand").html("<img src='https://res.cloudinary.com/dbqqjaqqa/image/upload/v1489836162/smaller_size_logo_wigzr1.png'>");
+  }
 });
